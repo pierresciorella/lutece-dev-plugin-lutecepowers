@@ -209,6 +209,8 @@ bash ${LUTECEPOWERS_ROOT}/skills/lutece-migration-v8-agent-teams/scripts/final-g
 Each turn of the loop:
 
 1. **Read what is red**, and only that. The gate names the check, the failing test or the failing suite.
+   `verification/runtime-triage.md` maps a runtime symptom — an exception `causes.py` surfaced, a 500 at
+   render, an empty screen with nothing logged — to its family and to the owner of the fix.
 2. **Fix it at the source.** Never silence it: an allowlist entry, a deleted assertion or a scenario rewritten to
    expect the defect all turn the gate green while the defect stays.
 3. **Run the gate again, in full.** A fix invalidates more than it touches: a ported portlet breaks the tests that

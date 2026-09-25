@@ -1,6 +1,9 @@
 # Migration Verification Checks — Catalog
 
 > Used by `verify-migration.sh` (full project) and `verify-file.sh` (per-file subset)
+>
+> Every check here reads the sources. The failures that only exist at runtime — and that a green build
+> reports as success — are triaged in `runtime-triage.md`.
 
 ## Check Format
 
